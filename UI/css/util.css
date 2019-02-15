@@ -1,0 +1,833 @@
+/***********
+Navbar styling
+***********/
+.navbar {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* vertical-align: middle; */
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    padding: 0 30px;
+    text-align: center;
+    min-width: 120px;
+    border-bottom: 1px solid #eaaa8300;
+
+}
+
+a.nav-link:hover {
+    color: #eaaa83;
+    /* border-bottom: 1px solid #eaaa83 !important; */
+}
+.navbar a.navbar-brand{
+    float: left;
+}
+ a.navbar-brand {
+     font-weight: 700;
+     font-size: 2rem;
+     white-space: nowrap;
+     text-decoration: none;
+    height: inherit;
+    line-height: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #eaaa83;
+}
+
+ a.navbar-brand span {
+    font-size: 28px;
+    font-weight: 700
+}
+
+.navbar-nav {
+    float: right;
+    list-style-type: none;
+    height: inherit;
+    line-height: inherit;
+    transform: rotate(360deg);
+}
+
+.nav-item {
+    display: inline-block;
+
+}
+/* .nav-item:hover{
+    background-color: #eaaa83;
+    color: #fff;
+} */
+
+.navbar .navbar-toggler {
+    display: none;
+}
+
+
+/***********
+Navbar styling
+***********/
+/*
+.navbar{
+    z-index: 1030;
+    background-color: #ffffff;
+}
+
+
+.navbar-brand{
+     font-weight: 700;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.navbar-toggler{
+    cursor: pointer;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+.navbar-collapse{
+    display: none;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-item{
+    width: 100%;
+}
+.nav-link{
+    font-weight: 700;
+    font-size: .9rem;
+    padding: .75rem 0;
+    display: block;
+    background: transparent;
+} */
+
+
+/***********
+Navbar Fixed Bottom styling
+***********/
+
+.fix-bottom {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.fix-bottom-child {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.fix-bottom-link {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #ffffffb3;
+
+}
+
+.fix-bottom-link:hover {
+
+    color: #fff;
+}
+
+/***********
+Navbar Fixed Top styling
+***********/
+
+.fix-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.fix-top-child {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.fix-top-link {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #ffffffb3;
+}
+
+.fix-top-link:hover {
+    color: #fff;
+}
+
+/***********
+Navbar Sticky Top styling
+***********/
+
+.sticky-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.sticky-top-child {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-top-link {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #ffffffb3;
+
+}
+
+.sticky-top-link:hover {
+    color: #fff;
+}
+
+
+/***********
+Brand Styling
+***********/
+
+.brand-banner {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom, rgba(243, 243, 243, 0.3686274509803922) 50%, rgba(243, 243, 243, 0.3686274509803922) 100%),
+    url(../images/foodie4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.brand-title {
+    font-size: 2.25rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.brand-description {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 300;
+    color: rgba(0,0,0, .75);
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+/***********
+Global Styling
+***********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", cursive, 'Comic Sans Ms', 'Comic Sans', serif
+}
+
+a {
+    text-decoration: none;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 15px;
+}
+.fa-icon{
+    /* display: flex;
+    justify-content: space-evenly; */
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #eaaa83;
+}
+.fa-icon-title{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #000;
+}
+.fa-icon-desc{
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+.fa-icon-input{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #eaaa83;
+    position: absolute;
+    left: 85%;
+    /* top: 38%; */
+    transform: translate(0%, 20%);
+}
+.rule{
+    width: 30%;
+    height: 0;
+    border: 1px solid #eaaa83;
+    margin: 3px;
+    display: inline-block;
+}
+.container {
+    /* padding: 0.3rem 0.5rem;
+ margin: 0.3rem 0.5rem; */
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+
+.space-sm{
+    margin: 2.5rem 0 !important;
+}
+
+.row {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.split-col {
+    display: flex;
+    place-content: center;
+    justify-content: space-around;
+
+}
+
+.split-col-end {
+    justify-content: flex-end;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.col-1>*,
+.col-2>*,
+.col-3>*,
+.col-4>*,
+.col-5>*,
+.col-6>*,
+.col-7>*,
+.col-8>*,
+.col-9>*,
+.col-10>*,
+.col-11>*,
+.col-12>* {
+    margin: .5rem 0;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-ctrl {
+    text-align: justify !important;
+}
+
+.display-inline-block {
+    display: inline-block !important;
+}
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/***********
+Section Styling
+***********/
+.intro{
+    width: 100%;
+    height: auto;
+    /* background: url(../images/foodie3.jpg) no-repeat center; */
+    background-size: cover;
+    background-color: #000000;
+}
+.section{
+    padding: 8rem 0;
+    position: relative;
+    height: auto;
+    /* color: #fff; */
+}
+.section .section-title{
+    font-size: 2.6rem;
+    width: 100%;
+    letter-spacing: 7px;
+    font-family: cursive;
+    z-index: -1;
+    opacity: 0.9;;
+}
+.section .section-desc{
+    font-weight: 900;
+    font-size: 1.7rem;
+    position: relative;
+    top: -10px;
+}
+
+/*************
+Color Styling
+************/
+.primary-color{
+    color: #eaaa83 !important;
+}
+.bkground-color{
+    background-color: #eaaa83 !important;
+   
+}
+.last-color{
+    color: #000000 !important;
+}
+.bklast-color{
+    background-color: #000000 !important;
+}
+.secondary-color{
+color: #fff !important;
+}
+.bksecondary-color{
+    color: #ffffff !important;
+}
+
+.icon-blue{
+    color: blue !important;
+}
+.icon-red{
+    color: red !important;
+}
+.icon-green{
+    color: green !important;
+}
+
+/***********
+Buttons
+***********/
+
+.button {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #eaaa83;
+    color: #000;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 1px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 300px;
+}
+
+.button:hover {
+    background-color: #FFFFFF !important;
+    color: #eaaa83 !important;
+    border-color: #eaaa83 !important;
+}
+
+.btn-success {
+    color: #ffffff;
+    background: green;
+    border: 1px solid green;
+}
+
+.btn-success:hover {
+    color: green;
+    border: 1px solid green;
+}
+
+.btn-error {
+    border: 1px solid tomato;
+    color: #ffffff;
+    background: tomato;
+}
+
+.btn-error:hover {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.btn-info {
+    color: #000;
+    border: 1px solid #eaaa83;
+    background: #fff;
+}
+
+.btn-info:hover {
+    color: #eaaa83;
+    border: 1px solid #eaaa83;
+}
+
+.btn-min {
+    padding: 5px 1px;
+    width: 75px;
+}
+
+.btn-max {
+    padding: 20px 1px;
+    width: 170px;
+    font-size: 1.3rem;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/***********
+Image Styling
+***********/
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+    .image-responsive{
+        max-width: 100% !important;
+        max-height: 100% !important;
+        margin: auto;
+    }
+    /*************
+    Media Queries Image Styling
+    ************/
+        /* @media  screen and (min-width: 500px){
+            .image-responsive{
+                width: initial !important;
+                height: initial !important;
+            }
+        } */
+
+/***********
+Form Styling
+***********/
+
+.form-background{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(243, 243, 243, 0.3686274509803922) 50%, rgba(243, 243, 243, 0.3686274509803922) 100%),
+    url(../images/foodie2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.form-container{
+       /* width: 317px; */
+       height: auto;
+       background: #fff;
+       color: #fff;
+       top: 50%;
+       left: 50%;
+       position: absolute;
+       transform: translate(-50%, -50%);
+       /* box-sizing: border-box; */
+       padding: 60px 25px;
+       max-width: 525px;
+}
+.form-title{
+    height: 80px;
+}
+.form-group{
+    width: 100%;
+}
+input[type="email"], input[type="tel"],input[type="number"],input[type="text"],input[type="url"], input[type="password"]{
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid #eaaa83;
+    border-radius: 8px;
+    padding: 20px 10px;
+    font-size: 16px
+}
+.error{
+    display: block;
+    margin: 10px 0;
+}
+/*************
+Media Queries
+************/
+
+@media screen and (max-width: 767px) {
+    /*************
+    Navbar Styling
+    ************/
+
+    .navbar {
+        padding: 0;
+    }
+
+    ul.navbar-nav {
+        width: 100%;
+        padding: 0;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 1);
+         transition: all ease-in-out 0.3s;
+
+    }
+
+    .navbar .nav-item {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .navbar .navbar-nav.open {
+        max-height: inherit !important;
+            transform: rotate(360deg);
+    }
+
+    .navbar .nav-link {
+        width: 100%;
+        border-bottom: 1px solid #000000;
+    }
+
+    .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        color: #000000;
+        border: solid 2px #ffffff;
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+
+    }
+
+    .navbar .navbar-toggler .navbar-toggler-icon,
+    .navbar .navbar-toggler .navbar-toggler-icon::before,
+    .navbar .navbar-toggler .navbar-toggler-icon::after {
+        display: block;
+        content: '';
+        height: 3px;
+        width: 28px;
+        background-color: #000000;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+        ;
+    }
+
+    .navbar .navbar-toggler .navbar-toggler-icon::before {
+        transform: translateY(-8px);
+    }
+
+    .navbar .navbar-toggler .navbar-toggler-icon::after {
+        transform: translateY(5px);
+    }
+ .navbar .navbar-toggler.open-navbar-toggler .navbar-toggler-icon{
+    background-color: transparent;
+    transform: scale(0.85) rotate(270deg);
+ }
+
+ .navbar .navbar-toggler.open-navbar-toggler .navbar-toggler-icon::after{
+    transform: translateY(-3px) scale(0.75) rotate(45deg);
+ }
+    .navbar .navbar-toggler.open-navbar-toggler .navbar-toggler-icon::before{
+        transform: translateY(0px) scale(0.75) rotate(-45deg);
+    }
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+    /*************
+    Navbar Styling
+    ************/
+    /* .navbar .navbar-nav {
+        padding: 0 10px
+    } */
+
+    .navbar .navbar-nav .nav-link {
+        min-width: 100px;
+        padding: 0 20px;
+    }
+}
+
+/*************
+Media Queries
+************/
+
+@media screen and (min-width: 768px) {
+    /*************
+    Global Styling
+    ************/
+
+    .row {
+        padding: 0;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        padding: 0.7% 0.5%;
+        overflow-wrap: break-word;
+        margin: auto;
+    }
+
+    .col-11 {
+        flex: 0 0 91%;
+        max-width: 91%;
+    }
+
+    .col-10 {
+        flex: 0 0 82%;
+        max-width: 82%;
+    }
+
+    .col-9 {
+        flex: 0 0 74%;
+        max-width: 74%;
+    }
+
+    .col-8 {
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+
+    .col-7 {
+        flex: 0 0 57%;
+        max-width: 57%;
+    }
+
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-5 {
+        flex: 0 0 41%;
+        max-width: 41%;
+    }
+
+    .col-4 {
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .col-3 {
+        flex: 0 0 24%;
+        max-width: 24%;
+    }
+
+    .col-2 {
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+
+    .col-1 {
+        flex: 0 0 7%;
+        max-width: 7%;
+    }
+}
+/***********
+Custom styling
+***********/
+.intro .container{
+    height: 65vh;
+}
+.intro .container .row{
+    height: inherit;
+}

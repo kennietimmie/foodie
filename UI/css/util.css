@@ -32,13 +32,14 @@ a.nav-link:hover {
     color: #eaaa83;
     /* border-bottom: 1px solid #eaaa83 !important; */
 }
-
-.navbar a.navbar-brand {
+.navbar a.navbar-brand{
+    float: left;
+}
+ a.navbar-brand {
      font-weight: 700;
      font-size: 2rem;
      white-space: nowrap;
      text-decoration: none;
-    float: left;
     height: inherit;
     line-height: inherit;
     text-transform: uppercase;
@@ -46,7 +47,7 @@ a.nav-link:hover {
     color: #eaaa83;
 }
 
-.navbar a.navbar-brand span {
+ a.navbar-brand span {
     font-size: 28px;
     font-weight: 700
 }
@@ -299,6 +300,22 @@ p{
     display: block;
     font-size: 14px;
     color: #000;
+}
+.fa-icon-input{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #eaaa83;
+    position: absolute;
+    left: 85%;
+    /* top: 38%; */
+    transform: translate(0%, 20%);
+}
+.rule{
+    width: 30%;
+    height: 0;
+    border: 1px solid #eaaa83;
+    margin: 3px;
+    display: inline-block;
 }
 .container {
     /* padding: 0.3rem 0.5rem;
@@ -573,6 +590,32 @@ Image Styling
 Form Styling
 ***********/
 
+.form-background{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(243, 243, 243, 0.3686274509803922) 50%, rgba(243, 243, 243, 0.3686274509803922) 100%),
+    url(../images/foodie2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.form-container{
+       /* width: 317px; */
+       height: auto;
+       background: #fff;
+       color: #fff;
+       top: 50%;
+       left: 50%;
+       position: absolute;
+       transform: translate(-50%, -50%);
+       /* box-sizing: border-box; */
+       padding: 60px 25px;
+       max-width: 525px;
+}
+.form-title{
+    height: 80px;
+}
 .form-group{
     width: 100%;
 }
@@ -584,7 +627,10 @@ input[type="email"], input[type="tel"],input[type="number"],input[type="text"],i
     padding: 20px 10px;
     font-size: 16px
 }
-
+.error{
+    display: block;
+    margin: 10px 0;
+}
 /*************
 Media Queries
 ************/

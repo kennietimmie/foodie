@@ -29,7 +29,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-    color: #eaaa83 !important;
+    color: #eaaa83;
     /* border-bottom: 1px solid #eaaa83 !important; */
 }
 
@@ -41,7 +41,6 @@ a.nav-link:hover {
     float: left;
     height: inherit;
     line-height: inherit;
-    padding: 0 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #eaaa83;
@@ -57,7 +56,6 @@ a.nav-link:hover {
     list-style-type: none;
     height: inherit;
     line-height: inherit;
-    padding: 0 50px;
     transform: rotate(360deg);
 }
 
@@ -65,6 +63,10 @@ a.nav-link:hover {
     display: inline-block;
 
 }
+/* .nav-item:hover{
+    background-color: #eaaa83;
+    color: #fff;
+} */
 
 .navbar .navbar-toggler {
     display: none;
@@ -127,11 +129,12 @@ Navbar Fixed Bottom styling
 .fix-bottom {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;
 }
 
 .fix-bottom-child {
@@ -273,13 +276,40 @@ body {
 a {
     text-decoration: none;
 }
-
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 15px;
+}
+.fa-icon{
+    /* display: flex;
+    justify-content: space-evenly; */
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #eaaa83;
+}
+.fa-icon-title{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #000;
+}
+.fa-icon-desc{
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
 .container {
     /* padding: 0.3rem 0.5rem;
  margin: 0.3rem 0.5rem; */
     width: 100%;
     max-width: 90%;
     margin: auto;
+}
+
+.space-sm{
+    margin: 2.5rem 0 !important;
 }
 
 .row {
@@ -334,25 +364,28 @@ a {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .text-ctrl {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .display-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
-
+.display-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /***********
 Section Styling
@@ -370,23 +403,53 @@ Section Styling
     height: auto;
     /* color: #fff; */
 }
-.section h2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 10vh;
+.section .section-title{
+    font-size: 2.6rem;
+    width: 100%;
+    letter-spacing: 7px;
+    font-family: cursive;
+    z-index: -1;
+    opacity: 0.9;;
+}
+.section .section-desc{
+    font-weight: 900;
+    font-size: 1.7rem;
+    position: relative;
+    top: -10px;
 }
 
 /*************
 Color Styling
 ************/
 .primary-color{
-    co: #eaaa83;
+    color: #eaaa83 !important;
+}
+.bkground-color{
+    background-color: #eaaa83 !important;
+   
+}
+.last-color{
+    color: #000000 !important;
+}
+.bklast-color{
+    background-color: #000000 !important;
+}
+.secondary-color{
+color: #fff !important;
+}
+.bksecondary-color{
+    color: #ffffff !important;
 }
 
-
-
+.icon-blue{
+    color: blue !important;
+}
+.icon-red{
+    color: red !important;
+}
+.icon-green{
+    color: green !important;
+}
 
 /***********
 Buttons
@@ -395,7 +458,7 @@ Buttons
 .button {
     border-radius: 4px;
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #eaaa83;
     color: #000;
     text-align: center;
     font-size: 11px;
@@ -404,11 +467,15 @@ Buttons
     transition: all 0.5s;
     cursor: pointer;
     margin: 4px 5px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 300px;
 }
 
 .button:hover {
-    background: #FFFFFF;
-    color: #24292e;
+    background-color: #FFFFFF !important;
+    color: #eaaa83 !important;
+    border-color: #eaaa83 !important;
 }
 
 .btn-success {
@@ -480,6 +547,43 @@ Buttons
     right: 0;
 }
 
+/***********
+Image Styling
+***********/
+    .image-container{
+        display: flex;
+        justify-content: center;
+    }
+    .image-responsive{
+        max-width: 100% !important;
+        max-height: 100% !important;
+        margin: auto;
+    }
+    /*************
+    Media Queries Image Styling
+    ************/
+        /* @media  screen and (min-width: 500px){
+            .image-responsive{
+                width: initial !important;
+                height: initial !important;
+            }
+        } */
+
+/***********
+Form Styling
+***********/
+
+.form-group{
+    width: 100%;
+}
+input[type="email"], input[type="tel"],input[type="number"],input[type="text"],input[type="url"], input[type="password"]{
+    width: 100%;
+    height: 3.5rem;
+    border: 1px solid #eaaa83;
+    border-radius: 8px;
+    padding: 20px 10px;
+    font-size: 16px
+}
 
 /*************
 Media Queries
@@ -577,9 +681,9 @@ Media Queries
     /*************
     Navbar Styling
     ************/
-    .navbar .navbar-nav {
+    /* .navbar .navbar-nav {
         padding: 0 10px
-    }
+    } */
 
     .navbar .navbar-nav .nav-link {
         min-width: 100px;
@@ -591,7 +695,7 @@ Media Queries
 Media Queries
 ************/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     /*************
     Global Styling
     ************/

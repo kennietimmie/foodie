@@ -18,18 +18,23 @@ navToggler.addEventListener('click', () => {
  }));
 });
 
-//Banner Title
+//Banner Title, Description and Image
 const brandTitle = document.querySelector('.brand-title');
 const brandDesc = document.querySelector('.brand-description');
-const descMsg = ["Seasonal & local food", "Modern fast food service"]
+
+const descMsg = ["Seasonal & local food", "Modern fast food service"];
 const titleMsg = ["Glossary Japanese Culture", "Traditional Vietnamese Cuisine"];
-let titleCounter = 0;
+let counter = 0;
 
 setInterval(() => {
- brandTitle.innerHTML = titleMsg[titleCounter];
- brandDesc.innerText = descMsg[titleCounter];
- titleCounter++;
- if (titleCounter >= titleMsg.length) {
-  titleCounter = 0;
+ brandTitle.innerHTML = titleMsg[counter];
+ brandDesc.innerText = descMsg[counter];
+
+ //counter should be tested against
+ //the smalest value.
+ counter++;
+ 
+ if (counter >= titleMsg.length) {
+  counter = 0;
  }
 }, 3500);

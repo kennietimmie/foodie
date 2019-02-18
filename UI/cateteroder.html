@@ -1,0 +1,374 @@
+<!--
+  Author: Sholadoye Kehinde
+  Author URLs: https://github.com/kennietimmie/, https://codepen.com/kennietimmie
+  Project URL: https://github.com/kennietimmie/politico
+  Host URL   : https://kennietimmie.github.io/politico/UI/
+-->
+<!DOCTYPE html>
+<html lang="en-ng" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Order - All Order</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+	<meta name="author" content="Sholadoye Kehinde">
+	<link rel="stylesheet" type="text/css" media="screen" href="./fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/util.css">
+
+</head>
+
+<body class="account-page">
+	<nav class="fix-top bklast-color">
+		<div class="admin-container primary-color">
+			<div class="display-flex col-12">
+				<div class="col-6 display-flex-between ">
+					<div class="text-left">
+						<span class="fa-icon">
+							<a href="#" class="" data-toggle="adminCollapse1" id="adminBar">
+								<span class="fas fa-bars" aria-hidden="true"></span>
+							</a>
+							<!-- <span class="icon-notify">3</span> -->
+						</span>
+
+					</div>
+					<div class="text-left">
+						<h1>Dashboard</h1>
+					</div>
+				</div>
+				<!-- <div class="col-3">
+					<div class="text-center">
+
+						<div>
+							
+						</div>
+					</div>
+				</div> -->
+				<div class="col-6">
+					<div class="text-right display-flex">
+						<span class="fa-icon">
+							<a href="notification.html" >
+								<span class="fas fa-bell" aria-hidden="true"></span>
+							</a>
+							<span class="icon-notify">3</span>
+						</span>
+						<span class="fa-icon">
+							<a href="order.html" >
+								<span class="fas fa-utensils" aria-hidden="true"></span>
+							</a>
+							<span class="icon-notify">3</span>
+						</span>
+						<span class="fa-icon">
+							<a href="#" class=" icon-green" id="adminProfile" data-toggle="adminCollapse2">
+								<span aria-hidden="true"><img src="./images/glaydys.png" class="icon-user avatar-sm"></span>
+
+							</a>
+							<!-- <span class="icon-notify">3</span> -->
+						</span>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</nav>
+	<nav class="fixx-left">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="fix-left  bklast-color text-center" id="adminCollapse1">
+						<li class="fix-left-item display-flex">
+							<a href="./account.html">
+								<span class="acct-icon">
+									<span class="icon-green display-flex">
+          <span class="fas fa-tachometer-alt" aria-hidden="true"></span >
+           
+           	<span class="acct-title primary-color">Tokemi</span>
+									</span>
+									<span class="acct-notify-null"></span>
+								</span>
+							
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="notification.html">
+								<span class="acct-icon">
+									<span class=" display-flex">
+          <span class="fas fa-bell" aria-hidden="true"></span>	
+          <span class="acct-title">Notification</span>
+									</span>
+									<span class="acct-notify">3</span>
+								</span>
+							
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="./userorder.html" >
+								<span class="acct-icon">
+									<span class=" display-flex">
+          <span class="fas fa-utensils" aria-hidden="true"></span>
+          <span class="acct-title">Order</span>
+									</span>
+									<span class="acct-notify">3</span>
+								</span>
+								
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="./usercateter.html" >
+								<span class="acct-icon">
+									<span class=" display-flex">
+          <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+          <span class="acct-title">Cateter</span>
+									</span>
+									<span class="acct-notify">3</span>
+								</span>	
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="#">
+								<span class="acct-icon icon-green">
+									<span class=" display-flex">
+          <span class="fas fa-toggle-on" aria-hidden="true"></span>
+          <span class="acct-title">Cateter</span>
+									</span>
+									<span class="acct-notify-null"></span>
+								</span>
+								
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="./cateteroder.html">
+								<span class="acct-icon">
+									<span class=" display-flex">
+          <span class="fas fa-utensils" aria-hidden="true"></span>
+          <span class="acct-title">User Order</span>
+									</span>
+									<span class="acct-notify-null"></span>
+								</span>
+								
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="#">
+								<span class="acct-icon icon-green">
+									<span class=" display-flex">
+          <span class="fas fa-toggle-on" aria-hidden="true"></span>
+          	<span class="acct-title">Admin</span>
+									</span>
+									<span class="acct-notify-null"></span>
+								</span>
+							
+							</a>
+						</li>
+						<li class="fix-left-item display-flex">
+							<a href="newcateter.html">
+								<span class="acct-icon">
+									<span class=" display-flex">
+          <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+          	<span class="acct-title">New Cateter</span>
+									</span>
+									<span></span>
+								</span>
+							
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="user-profile bklast-color" id="adminCollapse2">
+		<ul class="user-profile-list">
+			<li class="user-profile-list"><a href="profile.html">Profile</a></li>
+			<li class="user-profile-list"><a href="setting.html">Setting</a></li>
+			<li class="user-profile-list"><a href="logout.html">Logout</a></li>
+		</ul>
+	</div>
+	<section class="section user-section">
+			<div class="user-container container">
+					<div class="col-12">
+							<a href="./cateterneworder.html"  class="button btn-success"><span>New Order</span></a>
+       <div class="space-sm"></div>
+						<h4>Today's Order</h4>
+							<div class="col-12 text-center">
+									
+									<div class="col-12 ctrl-nscroll">
+											<table>
+													<thead></thead>
+													<tbody>
+															<tr>
+                 <th>Customer's Name</th>
+																	<th>Food's Name</th>
+                 <th>Food's Picture</th>
+                 <th>Price</th>
+																	<th>Status</th>
+															</tr>
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-green">
+																									<span class="fas fa-toggle-on" aria-hidden="true"></span>
+																							</span><span class="icon-green">Success</span>
+					
+																			</div>
+																	</td>
+															</tr>
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-red">
+																									<span class="fas fa-toggle-off" aria-hidden="true"></span>
+																							</span><span class="icon-red">Canceled</span>
+					
+																			</div>
+																	</td>
+															</tr>
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-yellow">
+																									<span class="fas fa-toggle-on" aria-hidden="true"></span>
+																							</span><span class="icon-yellow">Pending</span>
+					
+																			</div>
+																	</td>
+															</tr>
+															<tr>
+																<td>Total</td>
+																<td></td>
+																<td></td>
+																<td>
+																		#4, 500
+																	</td>
+																
+																<td>20-12-2017</td>
+														</tr>
+													</tbody>
+											</table>
+									</div>
+							</div>
+							<div class="space-sm"></div>
+						<h4>Order History</h4>
+							<div class="col-12 text-center">
+									
+									<div class="col-12 ctrl-nscroll">
+											<table>
+													<thead></thead>
+													<tbody>
+															<tr>
+                 <th>Customer's Name</th>
+																	<th>Food's Name</th>
+                 <th>Food's Picture</th>
+                 <th>Price</th>
+																	<th>Status</th>
+																	<th>Date</th>
+															</tr>
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-green">
+																									<span class="fas fa-toggle-on" aria-hidden="true"></span>
+																							</span><span class="icon-green">Success</span>
+					
+																			</div>
+																	</td>
+																	<td>20-12-2017</td>
+															</tr>
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-red">
+																									<span class="fas fa-toggle-off" aria-hidden="true"></span>
+																							</span><span class="icon-red">Canceled</span>
+					
+																			</div>
+																	</td>
+																	<td>20-12-2017</td>
+															</tr>
+														
+															<tr>
+                 <th>User name</th>
+																	<td>Rice with stew</td>
+                 <td><img class="avatar-sm" src="./images/burger.png"></td>
+                 <td>
+																			#1, 500
+																		</td>
+																	<td>
+																			<div>
+																							<span class="primary-color icon-yellow">
+																									<span class="fas fa-toggle-on" aria-hidden="true"></span>
+																							</span><span class="icon-yellow">Pending</span>
+					
+																			</div>
+																	</td>
+																	<td>20-12-2017</td>
+															</tr>
+													</tbody>
+											</table>
+									</div>
+							</div>
+								<div class="space-sm"></div>
+							<h4>Total Amount Made</h4>
+								<div class="col-12 text-center">
+										
+										<div class="col-12 ctrl-nscroll">
+												<table>
+														<thead></thead>
+														<tbody>
+																<tr>
+																		<th>Total</th>
+																		<th>Price</th>
+																</tr>
+																<tr>
+																		<td>Total</td>
+																		<td>
+																			#4, 500
+																		</td>
+																	</tr>
+														</tbody>
+												</table>
+										</div>
+								</div>
+					</div>
+			</div>
+	</section>
+
+	<script src="./fontawesome/js/all.js"></script>
+	<script src="./fontawesome/js/all.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
